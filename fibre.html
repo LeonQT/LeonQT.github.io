@@ -3,12 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="healthStyle.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-   <div id="menu"></div>
+    <div id="menu"></div>
 
     <div class="content">
         <h1>膳食纤维 Dietary Fiber</h1>
@@ -99,8 +101,16 @@
             建议每日两份水果和每日三份蔬菜。
             然而，健康饮食和生活方式实践协会和Khazanah研究所在2019年进行的一项研究发现，MDG推荐的膳食纤维摄入量实际上低于所需的量。
         </p>
-
     </div>
+
+
+    <div class="conBackTop">
+        <div class="backTopBtn">
+            <i class="fi fi-rs-chevron-double-up"> TOP</i>
+        </div>
+    </div>
+
+    <footer>Copyright © 2023 Leon </footer>
 
     <script>
 
@@ -110,8 +120,20 @@
             });
         });
 
+        jQuery(window).scroll(function () {
+            var $el = jQuery('.backTopBtn');
+
+            if (jQuery(this).scrollTop() >= 700) $el.addClass('shown');
+            else $el.removeClass('shown');
+        });
+
+        $(function () {
+            $('.backTopBtn').click(function () {
+                $(window).scrollTop(0);
+            })
+        })
+
     </script>
 
 </body>
-
 </html>
