@@ -110,6 +110,8 @@
         </div>
     </div>
 
+    <div id="footer"></div>
+
     <script>
 
         $(document).ready(function () {
@@ -126,6 +128,9 @@
         });
 
         $(function () {
+
+            $("#footer").load("footer.html"); 
+
             $('.backTopBtn').click(function () {
                 $(window).scrollTop(0);
             })
