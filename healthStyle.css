@@ -1,6 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*For Dashboard*/
@@ -169,12 +172,9 @@ img {
 }
 
 footer {
-    position: relative;
     padding: 10px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     color: white;
     text-align: center;
     background-color: lightseagreen;
+    margin-top: auto;
  }
